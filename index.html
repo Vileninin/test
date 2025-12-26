@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MSD Guidelines">
+    <meta name="keywords" content="MSD, Mars Service Desk, Mars Knowledge Articles">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Final work</title>
+  </head>
+  <body>
+    <header>
+      <!-- Header -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="head_icon" src="icons/head_icon.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://marsprod.service-now.com/nav_to.do?uri=%2Fhome_splash.do%3Fsysparm_direct%3Dtrue" target="_blank">SNOW</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://marsprod.service-now.com/sp/" target="_blank">SSP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://webactiveroles.mars-ad.net/ARSWebInterface/" target="_blank">Active Directory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mimportal.id2.effem.com/IdentityManagement/default.aspx" target="_blank">MIM</a>
+              </li>
+              <li class="nav-item">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Azure</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://endpoint.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers" target="_blank" >
+                      E3 License check</a></li>
+                    <li><a class="dropdown-item" href="https://portal.azure.com/#blade/Microsoft_Azure_PIMCommon/ActivationMenuBlade/aadmigratedroles" target="_blank">My Roles</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OKTA</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://mars-admin.okta.com/admin/dashboard" target="_blank" >
+                      Mars-Admin</a></li>
+                    <li><a class="dropdown-item" href="https://portal.azure.com/#blade/Microsoft_Azure_PIMCommon/ActivationMenuBlade/aadmigratedroles" target="_blank">
+                      Mars Group-Admin</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://passwordvault-prod.mars/PasswordVault/v10/Classic/myaccounts.aspx" target="_blank">Cyber Ark</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                NGCC</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://eu.ccng.bt.com/cloudcontact" target="_blank" >
+                  NGCC Client</a></li>
+                  <li><a class="dropdown-item" href="https://reports-ld.ccng.bt.com/CosmoDashboard/Dashboard.xbap?language=en-US" target="_blank">
+                  Plasma</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://marsprod.service-now.com/kb_view.do?sys_kb_id=5df36544dbc0f4100ffe45e8139619b0&sysparm_rank=3&sysparm_tsqueryId=75efd226074d85109133f85c7c1ed0b0" target="_blank">
+                  Troubleshoot guidance</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="https://marta.mars.com/admin/soap/#/" target="_blank">
+                Marta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.deepl.com/translator" target="_blank">
+                Deepl Translator</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Search Bar -->
+      <section class="searchSection py-3">
+        <div class="row py-lg-5 mx-0">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light searchTitle">Service Now KB search </h1>
+            <form class="d-flex">
+              <input id="parser" class="form-control me-2" type="search" placeholder="Example: OKTA Unable to sign in" aria-label="Search" target="_blank">
+              <button id="success" class="btn btn-outline-success" type="button">Search</button>
+              </form>
+            <hr>
+            <p>Popular topics: <a href="https://marsprod.service-now.com/nav_to.do?uri=%2Fkb_view.do%3Fsysparm_article%3DKB0113142%26sysparm_stack%3D%26sysparm_view%3D" target="_blank">MS Teams Issues/Cache</a>, <a href="https://marsprod.service-now.com/kb_view.do?sys_kb_id=75f5fd511bbfa85037a25310604bcb3a&sysparm_class_name=kb_knowledge" target="_blank">Bitlocker recovery keys on Azure portal</a> </p>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Categories -->
+      <section>
+        <div class="b-example-divider"></div>
+        <div class="container px-4 py-5 categories">
+          <h2 class="pb-2 border-bottom">Technologies</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-dark flex-shrink-0 me-3">
+                <img src="icons/onedrive.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0089276" class="btn btn-outline-primary" target="_blank">OneDrive General Solution</a></h2>
+                <ul id="categories">
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0089276" target="_blank">KB0089276</a>- OneDrive Not syncing. Stuck in endless loop of Processing Changes</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0117011" target="_blank">KB0117011</a>- Onedrive doesn't sync the folder</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0111379" target="_blank">KB0111379</a>- OneDrive folder is not synced to PC by default</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/microsoft-teams.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0115096" class="btn btn-outline-primary" target="_blank">Microsoft Teams General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0155082" target="_blank">KB0089276</a>- How to fix MS Teams known issues</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0041136" target="_blank">KB0041136</a>- Customer reports call quality issues during Teams call</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0110259" target="_blank">KB0110259</a>- Teams Meetings and calls in VDI</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0100877" target="_blank">KB0100877</a>- Meeting Teams Room General Solution</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/microsoft-sharepoint.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0042105" class="btn btn-outline-primary" target="_blank">SharePoint General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0098722" target="_blank">KB0098722</a>- Can't access Sharepoint/OneDrive/Teams</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0118484" target="_blank">KB0118484</a>- Stop Syncing a Sharepoint Library to Resolve Sync Issues</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0023009" target="_blank">KB0023009</a>- Files from Sharepoint open in Read Only and can't be edited</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-dark flex-shrink-0 me-3">
+                <img src="icons/outlook.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0076173" class="btn btn-outline-primary" target="_blank">Outlook General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0120729" target="_blank">KB0120729</a>- Outlook O365 asks for the password</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0117011" target="_blank">KB0098605</a>- Outlook Disconnected </li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0012485" target="_blank">KB0012485</a>- How to set up a Shared Mailbox as an Additional Folder?</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/network.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0108841" class="btn btn-outline-primary" target="_blank">Network Issues Troubleshooting</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0104177" target="_blank">KB0104177</a>- General Troubleshooting for Zscaler</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0021142" target="_blank">KB0021142</a>- Wireless Troubleshooting Connectivity(Internal)</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0052801" target="_blank">KB0110259</a>- Cannot Connect to a Wireless Network(Public)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/mobile.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0094495" class="btn btn-outline-primary" target="_blank">Mobility General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0072448" target="_blank">KB0072448</a>- Set up Company Mail on Corporate iPhone or iPad with Microsoft Intune</li>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0076823" target="_blank">KB0118484</a>- Set up Company Mail on Android Device with Microsoft Intune</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0077738" target="_blank">KB0077738</a>- How to change the device passcode\PIN</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-dark flex-shrink-0 me-3">
+                <img src="icons/identity.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0090185" class="btn btn-outline-primary" target="_blank">Identity General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0020874" target="_blank">KB0020874</a>- Frequent AD lockout troubleshooting</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0020881" target="_blank">KB0020881</a>- Mars-AD Password Reset in ARS/Password sync</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0021395" target="_blank">KB0021395</a>- Code Red (Immediate account termination)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/okta.png" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0111328" class="btn btn-outline-primary" target="_blank">OKTA General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0113497" target="_blank">KB0113497</a>- Unable to Sign in into OKTA</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0118675" target="_blank">KB0118675</a>- You are not assigned this app in OKTA</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0118875" target="_blank">KB0118875</a>- OKTA 400 Error message</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/security.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0098601" class="btn btn-outline-primary" target="_blank">Security General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0114729" target="_blank">KB0114729</a>- Desktopadmin credentials usage guidelines for MSD and SITS</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0075959" target="_blank">KB0075959</a>- Computer is showing unwanted ads, pop-ups, etc</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0041709" target="_blank">KB0041709</a>- Procedure for users reporting email with suspicious link/instructions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-dark flex-shrink-0 me-3">
+                <img src="icons/desktop.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0081112" class="btn btn-outline-primary" target="_blank">Desktop General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0021173" target="_blank">KB0021173</a>- How to Troubleshoot SCCM Client</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0022985" target="_blank">KB0022985</a>- Computer freezing up or slow performance troubleshooting</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0080320" target="_blank">KB0080320</a>- Not able to print on a network office printer (Mars/RC)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/bitlocker.png" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/$knowledge.do?query=bitlocker&sysparm_type_filter=all&sysparm_order=relevancy" class="btn btn-outline-primary" target="_blank">Bitlocker</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0153508" target="_blank">KB0153508</a>- How to get Bitlocker recovery key</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0122000" target="_blank">KB0122000</a>- How to get Bitlocker recovery keys on Azure portal (for MSD use)</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0022077" target="_blank">KB0022077</a>- Bitlocker forgotten PIN/Recovery mode procedure (MBAM)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/folder.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0156511" class="btn btn-outline-primary" target="_blank">File & Print General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0020893" target="_blank">KB0020893</a>- Access to a shared folder</li>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0013843" target="_blank">KB0013843</a>- Connect and map the Network Drive or Shared Folder</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0089651" target="_blank">KB0089651</a>- RC Shared Folder Support Process</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0100631" target="_blank">KB0100631</a>- Grant access to RC Apps or BZT folder and map it</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square text-dark flex-shrink-0 me-3">
+                <img src="icons/desktop.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0082616" class="btn btn-outline-primary" target="_blank">VDI Troubleshooting steps</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=sc_cat_item&sys_id=c711d74b1bf7a8106f704002dd4bcb96" target="_blank">SSP Form</a>- Report an issue with VDI</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0089137" target="_blank">KB0089137</a>- How to request VDI access</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0110259" target="_blank">KB0110259</a>- Teams Meetings and calls in VDI</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/sap-icon.png" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0089861" class="btn btn-outline-primary" target="_blank">SAP General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0021096" target="_blank">KB0021096</a>- Global SAP Key Users/FE list</li>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0014495" target="_blank">KB0014495</a>- How to reset Mars SAP Password via GRC?</li>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0116164" target="_blank">KB0116164</a>- How to get help from SAP Security via MS Teams?</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="icons/royal-canin.svg" height="30px">
+              </div>
+              <div>
+                <h2><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0081796" class="btn btn-outline-primary" target="_blank">RC Apps General Solution</a></h2>
+                <ul>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0078490" target="_blank">KB0078490</a>- One Navision Support Process</li>
+                  <li><a href="https://marsprod.service-now.com/sp/?id=kb_article&sysparm_article=KB0013843" target="_blank">KB0099878</a>- Reflex Support process and Callout model</li>
+                  <li><a href="https://marsprod.service-now.com/kb_view.do?sysparm_article=KB0087335" target="_blank">KB0089651</a>- Ohris MSD support model</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </section>
+      <div class="lineExample"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer p-3 bg-light text-center position-relative">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10">
+            <span> Copyright &copy; 2022 Mars, Incorporated</span>
+          </div>
+          <div class="col-2">
+            <a href="#" class="position-relative bottom-0 end-0 p-3 text-right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/parser.js"></script>
+<script id='pit-chat-widget' src="js/widget.js?entityId=e6474571-685d-431a-865b-0964ee3210eb&accountId=06134212-a6ce-46fb-868e-547b8af7c104"></script>
+</body>
+</html>
